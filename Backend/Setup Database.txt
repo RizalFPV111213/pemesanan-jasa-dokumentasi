@@ -1,10 +1,14 @@
 
+https://github.com/RizalFPV111213/pemesanan-jasa-dokumentasi
+
 
 git add .
 
 git commit -m "gua ubah AP"
 
 git push
+
+git pull origin main
 
 
 =======================
@@ -107,6 +111,15 @@ CREATE TABLE Notifications (
 );
 
 ===============================
+
+
+1.  mysql -u root
+2.  SHOW DATABASES;
+3.  USE photographyservice;
+4.  SHOW TABLES;
+5.  DESCRIBE users;
+
+============================
 
 
 1. Pendaftaran dan Autentikasi Pengguna
