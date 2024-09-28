@@ -178,3 +178,17 @@ Integrasi Pembayaran: Gunakan API pembayaran untuk memproses transaksi (misal: S
 Integrasi Email: Gunakan layanan email untuk mengirim notifikasi dan konfirmasi.
 
 =====================================================================================
+
+INSERT INTO users (name, email, password, phone_number, role) VALUES
+('Alice Smith', 'alice.smith@example.com', 'hashed_password_1', '123-456-7890', 'customer'),
+('Bob Johnson', 'bob.johnson@example.com', 'hashed_password_2', '123-456-7891', 'admin'),
+('Charlie Brown', 'charlie.brown@example.com', 'hashed_password_3', '123-456-7892', 'customer'),
+('Diana Prince', 'diana.prince@example.com', 'hashed_password_4', '123-456-7893', 'customer'),
+('Eve Adams', 'eve.adams@example.com', 'hashed_password_5', '123-456-7894', 'admin'),
+('Frank Castle', 'frank.castle@example.com', 'hashed_password_6', '123-456-7895', 'customer'),
+('Grace Lee', 'grace.lee@example.com', 'hashed_password_7', '123-456-7896', 'customer');
+
+
+====================================================
+
+SELECT * FROM users;
