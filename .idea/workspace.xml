@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e4bb9c8-af55-4240-abe0-6cf46057c17c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/EntityManagerFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerApiServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerFindServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerRemoveServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/CustomerUpdateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/CrudTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/Servlet/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,12 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.CrudTest.Insert.executor": "Run",
+    "JUnit.CrudTest.executor": "Run",
+    "JUnit.CrudTest.find.executor": "Run",
     "JUnit.CrudTest.insert.executor": "Run",
+    "JUnit.CrudTest.remove.executor": "Run",
+    "JUnit.CrudTest.update.executor": "Run",
     "JUnit.EntityManagerFactoryTest.create.executor": "Run",
     "JUnit.EntityManagerFactoryTest.entitymanagerTest.executor": "Run",
     "JUnit.EntityManagerFactoryTest.testTransaction.executor": "Run",
@@ -67,8 +75,8 @@
       <recent name="D:\RIZAL\Update 2\backend-IJAL\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EntityManagerFactoryTest.testTransaction">
-    <configuration name="CrudTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CrudTest.remove">
+    <configuration name="CrudTest.Insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Perancangan-Sistem-Aplikasi" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +86,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
       <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.CrudTest" />
-      <option name="METHOD_NAME" value="insert" />
+      <option name="METHOD_NAME" value="Insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perancangan-Sistem-Aplikasi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
+      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.CrudTest" />
+      <option name="METHOD_NAME" value="find" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perancangan-Sistem-Aplikasi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
+      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.CrudTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perancangan-Sistem-Aplikasi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
+      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.CrudTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,38 +156,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntityManagerFactoryTest.entitymanagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Perancangan-Sistem-Aplikasi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
-      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.EntityManagerFactoryTest" />
-      <option name="METHOD_NAME" value="entitymanagerTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EntityManagerFactoryTest.testTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Perancangan-Sistem-Aplikasi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
-      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.EntityManagerFactoryTest" />
-      <option name="METHOD_NAME" value="testTransaction" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="backend-IJAL" />
       <method v="2">
@@ -147,10 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EntityManagerFactoryTest.testTransaction" />
-        <item itemvalue="JUnit.EntityManagerFactoryTest.entitymanagerTest" />
+        <item itemvalue="JUnit.CrudTest.remove" />
+        <item itemvalue="JUnit.CrudTest.update" />
+        <item itemvalue="JUnit.CrudTest.find" />
+        <item itemvalue="JUnit.CrudTest.Insert" />
         <item itemvalue="JUnit.EntityManagerFactoryTest.create" />
-        <item itemvalue="JUnit.CrudTest.insert" />
       </list>
     </recent_temporary>
   </component>

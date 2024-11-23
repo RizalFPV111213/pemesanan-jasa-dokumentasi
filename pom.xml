@@ -59,6 +59,15 @@
 		</dependency>
 
 
+			<!-- Dependensi lainnya -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.10.1</version> <!-- Pastikan menggunakan versi terbaru -->
+			</dependency>
+
+
+
 	</dependencies>
 
 	<build>

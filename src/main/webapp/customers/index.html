@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Pelanggan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Manajemen Pelanggan</h1>
+
+    <!-- Form untuk menambah pelanggan -->
+    <h2 id="formTitle">Tambah Pelanggan</h2>
+    <form id="customerForm">
+        <div class="form-group">
+            <label for="id">ID Pelanggan:</label>
+            <input type="text" class="form-control" id="id" name="id" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Nama Pelanggan:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah Pelanggan</button>
+    </form>
+
+    <!-- Daftar pelanggan -->
+    <h2 class="mt-5">Daftar Pelanggan</h2>
+    <table class="table table-bordered" id="customerTable">
+        <thead class="thead-light">
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Aksi</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Data pelanggan akan ditambahkan di sini -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function() {
+        loadCustomers();
+
+        // Memuat data pelanggan
+        function loadCustomers() {
+            $.ajax({
+                url: 'http://localhost:8080/api/customers',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    const tableBody = $('#customerTable tbody');
+                    tableBody.empty();
+                    data.forEach(customer => {
+                        tableBody.append(`
+                            <tr>
+                                <td>${customer.id}</td>
+                                <td>${customer.name}</td>
+                                <td>
+                                    <button class="btn btn-warning edit-btn" data-id="${customer.id}">Edit</button>
+                                    <button class="btn btn-danger delete-btn" data-id="${customer.id}">Hapus</button>
+                                </td>
+                            </tr>
+                        `);
+                    });
+                },
+                error: function() {
+                    alert('Error loading customers');
+                }
+            });
+        }
+
+        // Menangani form submit menggunakan AJAX
+        $('#customerForm').on('submit', function(e) {
+            e.preventDefault(); // Mencegah reload halaman
+            const id = $('#id').val();
+            const name = $('#name').val();
+
+            // Mengirimkan data ke servlet untuk menambah pelanggan
+            $.ajax({
+                url: 'http://localhost:8080/customers/insert', // Endpoint servlet
+                method: 'POST',
+                contentType: 'application/x-www-form-urlencoded', // Menggunakan x-www-form-urlencoded
+                data: {
+                    id: id,
+                    name: name
+                },
+                success: function() {
+                    loadCustomers(); // Memuat ulang daftar pelanggan
+                    $('#customerForm')[0].reset(); // Mengosongkan form
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert('Error adding customer: ' + errorThrown);
+                }
+            });
+        });
+
+        // Menangani tombol edit
+        $(document).on('click', '.edit-btn', function() {
+            const id = $(this).data('id');
+            window.location.href = `http://localhost:8080/customers/update?id=${id}`;
+        });
+
+        // Menangani tombol hapus
+        $(document).on('click', '.delete-btn', function() {
+            const id = $(this).data('id');
+            const confirmation = confirm('Apakah Anda yakin ingin menghapus pelanggan ini?');
+
+            if (confirmation) {
+                window.location.href = `http://localhost:8080/customers/remove?id=${id}`;
+            }
+        });
+    });
+</script>
+</body>
+</html>
