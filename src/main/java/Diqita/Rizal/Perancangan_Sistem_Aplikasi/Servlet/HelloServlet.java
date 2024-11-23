@@ -11,10 +11,9 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/add")
 public class HelloServlet extends HttpServlet {
 
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      resp.getWriter().println("test");
-    }
-
+  @Override
+  protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    resp.getWriter().println("test");
+  }
 
 }

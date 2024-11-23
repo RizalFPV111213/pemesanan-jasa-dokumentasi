@@ -1,10 +1,9 @@
 package Diqita.Rizal.Perancangan_Sistem_Aplikasi.Servlet;
 
-import Diqita.Rizal.Perancangan_Sistem_Aplikasi.Util.JpaUtil;
 import Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.Product;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Persistence;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,58 +11,43 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.List;
 
-
-@WebServlet(urlPatterns = "/products")
+@WebServlet(urlPatterns = "/produks")
 public class ProductServlet extends HttpServlet {
 
     private EntityManagerFactory entityManagerFactory;
 
     @Override
     public void init() throws ServletException {
-
-        // Inisialisasi EntityManagerFactory saat servlet diinisialisasi
-        entityManagerFactory = JpaUtil.getEntityManagerFactory();
+        entityManagerFactory = Persistence.createEntityManagerFactory("PerancanganSistem"); // Ganti dengan unit
+                                                                                            // persisten Anda
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        // Mengatur respons agar menggunakan format HTML
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-
-        // Mengambil parameter dari permintaan
-        String name = request.getParameter("name");
-        String priceStr = request.getParameter("price");
-        double price = Double.parseDouble(priceStr);
-
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Menampilkan daftar produk
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        EntityTransaction transaction = entityManager.getTransaction();
-
         try {
-            transaction.begin();
+            List<Product> products = entityManager.createQuery("FROM Product", Product.class).getResultList();
 
-            // Membuat objek Product
-            Product product = new Product();
-            product.setName(name);
-            product.setPrice(price);
-
-            // Menyimpan objek Product ke database
-            entityManager.persist(product);
-            transaction.commit();
-
-            out.println("<h2>Product created successfully!</h2>");
-            out.println("<p>Product Name: " + product.getName() + "</p>");
-            out.println("<p>Product Price: $" + product.getPrice() + "</p>");
-            out.println("<a href='index.html'>Back to Home</a>");
-        } catch (Exception e) {
-            if (transaction.isActive()) {
-                transaction.rollback();
+            resp.setContentType("text/html");
+            resp.getWriter().println("<!DOCTYPE html>");
+            resp.getWriter().println("<html lang='en'>");
+            resp.getWriter().println("<head>");
+            resp.getWriter().println("<meta charset='UTF-8'>");
+            resp.getWriter().println("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
+            resp.getWriter().println("<title>Daftar Produk</title>");
+            resp.getWriter().println("</head>");
+            resp.getWriter().println("<body>");
+            resp.getWriter().println("<h1>Daftar Produk</h1>");
+            resp.getWriter().println("<ul>");
+            for (Product product : products) {
+                resp.getWriter().println("<li>" + product.getName() + " - $" + product.getPrice() + "</li>");
             }
-            out.println("<h2>Error occurred while creating product: " + e.getMessage() + "</h2>");
-            out.println("<a href='product_create.html'>Try Again</a>");
+            resp.getWriter().println("</ul>");
+            resp.getWriter().println("</body>");
+            resp.getWriter().println("</html>");
         } finally {
             entityManager.close();
         }
@@ -71,10 +55,8 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     public void destroy() {
-        // Menutup EntityManagerFactory saat servlet dihancurkan
         if (entityManagerFactory != null) {
             entityManagerFactory.close();
         }
     }
 }
-
