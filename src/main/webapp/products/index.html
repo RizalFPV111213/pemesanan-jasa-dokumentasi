@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TEST</title>
+  <title>Test Product Servlet</title>
 </head>
-
 <body>
-  <h1>Products</h1>
-
-  <form action="http://localhost:8080/products" method="post">
-    <input type="text" name="name" placeholder="Nama Produk">
-    <input type="number" name="price" placeholder="Harga Produk">
-    <button type="submit">Simpan</button>
-  </form>
-
+<h1>Tambah Produk</h1>
+<form action="produks" method="post">
+  <label for="name">Nama Produk:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="price">Harga Produk:</label>
+  <input type="number" id="price" name="price" step="0.01" required>
+  <br>
+  <button type="submit">Tambah Produk</button>
+</form>
 </body>
-
 </html>

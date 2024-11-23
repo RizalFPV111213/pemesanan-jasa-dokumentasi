@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e4bb9c8-af55-4240-abe0-6cf46057c17c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/EntityManagerFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/Servlet/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,27 +41,33 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2ndlmb48nq6DLpV7F0rHft9yqrR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.CrudTest.insert.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EntityManagerFactoryTest.create.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/RIZAL/Update 2/backend-IJAL/src/main/webapp&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.CrudTest.insert.executor": "Run",
+    "JUnit.EntityManagerFactoryTest.create.executor": "Run",
+    "JUnit.EntityManagerFactoryTest.entitymanagerTest.executor": "Run",
+    "JUnit.EntityManagerFactoryTest.testTransaction.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/RIZAL/Update 2/backend-IJAL/src/main/webapp"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\RIZAL\Update 2\backend-IJAL\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EntityManagerFactoryTest.create">
+  <component name="RunManager" selected="JUnit.EntityManagerFactoryTest.testTransaction">
     <configuration name="CrudTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Perancangan-Sistem-Aplikasi" />
       <extension name="coverage">
@@ -88,6 +100,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EntityManagerFactoryTest.entitymanagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perancangan-Sistem-Aplikasi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
+      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.EntityManagerFactoryTest" />
+      <option name="METHOD_NAME" value="entitymanagerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityManagerFactoryTest.testTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perancangan-Sistem-Aplikasi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi" />
+      <option name="MAIN_CLASS_NAME" value="Diqita.Rizal.Perancangan_Sistem_Aplikasi.EntityManagerFactoryTest" />
+      <option name="METHOD_NAME" value="testTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="backend-IJAL" />
       <method v="2">
@@ -103,6 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EntityManagerFactoryTest.testTransaction" />
+        <item itemvalue="JUnit.EntityManagerFactoryTest.entitymanagerTest" />
         <item itemvalue="JUnit.EntityManagerFactoryTest.create" />
         <item itemvalue="JUnit.CrudTest.insert" />
       </list>
@@ -118,5 +164,8 @@
       <updated>1729310996527</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

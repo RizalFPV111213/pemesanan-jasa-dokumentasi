@@ -15,6 +15,10 @@
 
         <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.User</class>
 
+        <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.Customer</class>
+
+
+
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
