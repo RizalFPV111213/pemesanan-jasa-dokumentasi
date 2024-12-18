@@ -26,8 +26,8 @@ public class CrudTest {
         entityTransaction.begin();
 
         Customer customer = new Customer();
-        customer.setId("1");
-        customer.setName("Audyari W");
+        customer.setId("2");
+        customer.setName("Rizal Test");
 
         entityManager.persist(customer);
 

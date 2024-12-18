@@ -104,13 +104,27 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <p><b>Tentang Saya:</b> [Tuliskan tentang diri Anda]</p>
-                    <p><b>Layanan:</b> [Daftar layanan yang Anda tawarkan]</p>
-                    <p><b>Portofolio:</b> [Tautan ke portofolio]</p>
-                    <p><b>Kontak:</b> [Nomor telepon, email, media sosial]</p>
+                    <form>
+                      <div class="mb-3">
+                        <label for="customerName" class="form-label"><b>Nama Customer:</b></label>
+                        <input type="text" class="form-control" id="customerName" name="customerName" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="phoneNumber" class="form-label"><b>Nomer Handphone:</b></label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"><b>Email:</b></label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="domisili" class="form-label"><b>Domisili:</b></label>
+                        <input type="text" class="form-control" id="domisili" name="domisili" required>
+                      </div>
+                    </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Booking sekarang</button>
                   </div>
                 </div>
               </div>
