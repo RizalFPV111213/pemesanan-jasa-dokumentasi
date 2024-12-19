@@ -13,9 +13,11 @@
 
         <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.Product</class>
 
-        <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.User</class>
+        <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.Client</class>
 
         <class>Diqita.Rizal.Perancangan_Sistem_Aplikasi.model.Customer</class>
+
+
 
 
 
