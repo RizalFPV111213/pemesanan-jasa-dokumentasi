@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e4bb9c8-af55-4240-abe0-6cf46057c17c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/Servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/Servlet/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Drone Pilot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Drone Pilot/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Photographer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Photographer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Diqita/Rizal/Perancangan_Sistem_Aplikasi/CrudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Videographer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Videographer/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,29 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.CrudTest.Insert.executor": "Run",
-    "JUnit.CrudTest.executor": "Run",
-    "JUnit.CrudTest.find.executor": "Run",
-    "JUnit.CrudTest.insert.executor": "Run",
-    "JUnit.CrudTest.remove.executor": "Run",
-    "JUnit.CrudTest.update.executor": "Run",
-    "JUnit.EntityManagerFactoryTest.create.executor": "Run",
-    "JUnit.EntityManagerFactoryTest.entitymanagerTest.executor": "Run",
-    "JUnit.EntityManagerFactoryTest.executor": "Run",
-    "JUnit.EntityManagerFactoryTest.testTransaction.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/RIZAL/Update 2/backend-IJAL/src/main/webapp",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.CrudTest.Insert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudTest.find.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudTest.insert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudTest.remove.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerFactoryTest.create.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerFactoryTest.entitymanagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerFactoryTest.testTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/RIZAL/Update 2/backend-IJAL/src/main/webapp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\RIZAL\Update 2\backend-IJAL\src\main\webapp" />
